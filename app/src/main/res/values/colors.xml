@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="red">#ffff0000</color>
+    <color name="higtlight">#ff0078f0</color>
+    <color name="durationtext">#ff7d7d7d</color>
+    <color name="background">#ffc3ddea</color>
+    <color name="yellow">#ffffcc00</color>
+    <color name="title">#ff274462</color>
+    <color name="title_up">#868686</color>
+    <color name="graey">#cc333333</color>
+    <color name="graey_light">#ccaaaaaa</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">@color/material_blue_grey_800</color>
+    <color name="colorPrimaryDark">@color/material_blue_grey_900</color>
+    <color name="colorPrimarybule">@color/material_blue_grey_900</color>
+    <color name="colorSecondary">@color/material_deep_teal_200</color>
+    <color name="colorSecondaryDark">@color/material_deep_teal_500</color>
+    <color name="urp_red">#e23c41</color>
+    <color name="urp_red_depth">#2C30C9</color>
+    <color name="urp_green">#5CB85C</color>
+    <color name="urp_green_depth">#449D44</color>
+
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="over_red">#bc6656</color>
+    <color name="over_green">#347e74</color>
+
+</resources>

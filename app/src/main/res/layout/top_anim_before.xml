@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp">
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/before_bg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorSecondaryDark">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/before_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dim_foreground_disabled_material_light">
+
+            <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"/>
+
+            <edu.ynu.sl.ui.widget.RippleView
+                    android:id="@+id/login_benke"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    app:rv_type="rectangle"
+                    >
+
+                <TextView
+                        android:id="@+id/btn_benke"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="本科生登陆"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" android:background="@color/urp_red"/>
+            </edu.ynu.sl.ui.widget.RippleView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

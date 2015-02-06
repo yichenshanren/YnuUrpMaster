@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout
+            android:id="@+id/login_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp">
+
+        <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/edit_bg"
+                android:drawableLeft="@drawable/ic_user_head"
+                android:ems="11"
+                android:hint="学号"
+                android:inputType="date"
+                android:phoneNumber="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp">
+
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+                android:id="@+id/user_password"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/user_name"
+                android:layout_alignRight="@+id/user_name"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/edit_bg"
+                android:drawableLeft="@drawable/ic_user_password"
+                android:ems="10"
+                android:hint="密码"
+                android:password="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@null"
+                android:inputType="date"
+                android:textSize="14sp"/>
+
+        <EditText
+                android:id="@+id/user_authcode"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/user_password"
+                android:layout_below="@+id/user_password"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_bg"
+                android:drawableLeft="@drawable/ic_user_auth"
+                android:ems="10"
+                android:hint="验证码"
+                android:textColor="@color/colorSecondaryDark"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/graey_light"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"/>
+
+        <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/user_authcode"
+                android:layout_alignRight="@+id/user_password"
+                android:layout_below="@+id/user_password"
+                android:layout_toRightOf="@+id/user_authcode">
+
+            <ImageView
+                    android:id="@+id/user_authcode_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/login_logo"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/user_authcode"
+                android:layout_marginTop="21dp">
+
+            <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+            <edu.ynu.sl.ui.widget.RippleView
+                    android:id="@+id/login_cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    app:rv_type="rectangle">
+
+                <TextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/red"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="取  消"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+            </edu.ynu.sl.ui.widget.RippleView>
+
+            <edu.ynu.sl.ui.widget.RippleView
+                    android:id="@+id/login_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textView1"
+                    app:rv_type="rectangle">
+
+                <TextView
+                        android:id="@+id/btn_login"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/urp_green"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="登  陆"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+            </edu.ynu.sl.ui.widget.RippleView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

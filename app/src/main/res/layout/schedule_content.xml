@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/course_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_margin="5dp"
+            android:paddingBottom="5dp" android:background="@color/white">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/course_name" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="false"
+                android:gravity="center_vertical" android:paddingLeft="5dp" android:textSize="14dp"
+                android:paddingTop="38dp" android:paddingBottom="18dp" android:layout_alignParentTop="true"
+                android:textColor="@color/colorSecondaryDark"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="满"
+                android:id="@+id/selected_status" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:textSize="12sp" android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp" android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingTop="2dp" android:paddingBottom="2dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人文"
+                android:id="@+id/classify_text" android:layout_alignBottom="@+id/selected_status"
+                android:layout_toRightOf="@+id/selected_status" android:layout_toEndOf="@+id/selected_status"
+                android:textSize="12sp" android:layout_marginLeft="3dp" android:layout_marginTop="2dp"
+                android:padding="2dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学分"
+                android:id="@+id/course_grade" android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/classify_text" android:layout_toEndOf="@+id/classify_text"
+                android:textSize="12sp" android:layout_marginLeft="3dp" android:layout_marginTop="2dp"
+                android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp"
+                android:paddingBottom="2dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教师"
+                android:id="@+id/course_teacher"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/course_time"
+                android:layout_toEndOf="@+id/course_time"
+                android:padding="2dp" android:layout_toRightOf="@+id/course_time" android:layout_marginLeft="3dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程安排"
+                android:id="@+id/course_time"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12dp" android:paddingLeft="2dp"
+
+                android:paddingRight="2dp"
+                android:layout_toRightOf="@+id/course_grade" android:layout_toEndOf="@+id/course_grade"
+                android:layout_marginLeft="3dp" android:layout_alignTop="@+id/course_name"
+                android:layout_alignBottom="@+id/course_grade" android:layout_marginTop="2dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0.1dp"
+                android:text="New Text"
+                android:id="@+id/textView" android:layout_below="@+id/course_name"
+                android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                android:background="@color/white"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/course_room" android:layout_alignTop="@+id/course_teacher"
+                android:layout_toRightOf="@+id/course_teacher" android:layout_toEndOf="@+id/course_teacher"
+                android:textSize="12dp" android:paddingLeft="3dp" android:paddingTop="2dp"
+                android:paddingRight="3dp" android:paddingBottom="2dp" android:layout_marginLeft="3dp"/>
+    </RelativeLayout>
+</RelativeLayout>
